@@ -1,0 +1,19 @@
+{
+  "name": "site-forum",
+  "version": "1.0.0",
+  "description": "Multi-page information website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qweeex/site-forum.git"
+  },
+  "author": "Arkady Pugachev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qweeex/site-forum/issues"
+  },
+  "homepage": "https://github.com/qweeex/site-forum#readme"
+}
