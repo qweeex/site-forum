@@ -23,6 +23,48 @@ body{
   }
 }
 
+// Custom breadcrumbs
+.bread{
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &-link{
+    color: #646262;
+    font-size: 14px;
+    font-weight: 300;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+    &:nth-child(1){
+      padding-left: 0;
+    }
+    &:after{
+      width: 1px;
+      height: 30px;
+      background: #646262;
+      display: block;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -7px;
+    }
+  }
+  &-link.active{
+    color: #030303;
+    font-weight: 400;
+    pointer-events: none;
+    text-decoration: none;
+    &:after{
+      display: none;
+    }
+  }
+}
+
 /// Reset CSS
 @import "reset";
 
@@ -43,3 +85,13 @@ body{
 
 // Footer
 @import "Footer";
+
+
+// Event page
+@import "Event/Event";
+
+// Partneer Page
+@import "Partneer/Partneer";
+
+// Shop
+@import "Shop/Shop";

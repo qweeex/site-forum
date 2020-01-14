@@ -1,0 +1,119 @@
+.event{
+  &-image{
+    height: 561px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  &-content{
+    padding-bottom: 30px;
+    .title{
+      color: #030303;
+      font-size: 30px;
+      font-weight: 600;
+      padding-bottom: 34px;
+    }
+    p{
+      color: #030303;
+      font-size: 16px;
+      font-weight: 400;
+      padding-top: 15px;
+      line-height: 1.2;
+      padding-bottom: 15px;
+    }
+    .desc{
+      color: #636161;
+      font-size: 16px;
+      font-weight: 400;
+      padding-top: 10px;
+    }
+    ul{
+      color: #030303;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+  &-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-top: 25px;
+    &__img{
+      padding-bottom: 50px;
+    }
+    &__level{
+      padding-bottom: 25px;
+      p{
+        color: #414141;
+        font-size: 31px;
+        font-weight: 400;
+      }
+    }
+    &__web{
+      padding-bottom: 26px;
+      a{
+        color: #414141;
+        font-size: 21px;
+        font-weight: 400;
+        text-decoration: none;
+        &:before{
+          content: url("/img/icons/global.svg");
+          float: left;
+          display: block;
+          width: 17px;
+          margin-right: 12px;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    &__phone{
+      padding-bottom: 40px;
+      a{
+        color: #414141;
+        font-size: 21px;
+        font-weight: 400;
+        text-decoration: none;
+        &:before{
+          content: url("/img/icons/call.svg");
+          float: left;
+          display: block;
+          width: 17px;
+          margin-right: 8px;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    &__btn{
+      .btn-map{
+        text-decoration: none;
+        background-color: #908f8f;
+        color: #ffffff;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        padding: 12px 45px;
+        transition: all 0.4s;
+        &:hover{
+          background-color: #636161;
+        }
+        span{
+          &:before{
+            content: url("/img/icons/navigation_2.svg");
+            width: 15px;
+            float: left;
+            position: absolute;
+            left: 15px;
+            top: 16px
+          }
+        }
+      }
+    }
+  }
+}
