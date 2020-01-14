@@ -1,3 +1,115 @@
 .shop{
-
+  &-content{
+    &__img{
+      img{
+        max-width: 100%;
+      }
+    }
+    &__text{
+      .title{
+        color: #030303;
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 34px;
+        padding-top: 57px;
+      }
+      p{
+        color: #030303;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+  }
+  &-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    &__img{
+      padding-bottom: 40px;
+    }
+    &__level{
+      padding-bottom: 20px;
+      p{
+        color: #414141;
+        font-size: 31px;
+        font-weight: 400;
+      }
+    }
+    &__web{
+      padding-bottom: 25px;
+      a{
+        color: #414141;
+        font-size: 21px;
+        font-weight: 400;
+        text-decoration: none;
+        &:before{
+          content: url("/img/icons/global.svg");
+          float: left;
+          display: block;
+          width: 17px;
+          margin-right: 12px;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    &__phone{
+      padding-bottom: 25px;
+      a{
+        color: #414141;
+        font-size: 21px;
+        font-weight: 400;
+        text-decoration: none;
+        &:before{
+          content: url("/img/icons/call.svg");
+          float: left;
+          display: block;
+          width: 17px;
+          margin-right: 8px;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    &__social{
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 35px;
+      a{
+        margin-right: 10px;
+      }
+    }
+    &__btn{
+      .btn-map{
+       button{
+         text-decoration: none;
+         background-color: #908f8f;
+         color: #ffffff;
+         border-radius: 30px;
+         font-size: 16px;
+         font-weight: 400;
+         position: relative;
+         padding: 12px 45px;
+         transition: all 0.4s;
+         border: 0;
+         &:hover{
+           background-color: #636161;
+         }
+         span{
+           &:before{
+             content: url("/img/icons/navigation_2.svg");
+             width: 15px;
+             float: left;
+             position: absolute;
+             left: 15px;
+             top: 16px
+           }
+         }
+       }
+      }
+    }
+  }
 }
