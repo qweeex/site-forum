@@ -1,0 +1,94 @@
+.stock{
+  margin-top: 90px;
+  margin-bottom: 60px;
+  &-title{
+    p{
+      color: #030303;
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  &-all{
+    &__link{
+      color: #000000;
+      font-size: 16px;
+      text-decoration: none;
+      &:after{
+        content: url("/img/icons/down-arrow_2.svg");
+        width: 9px;
+        margin-left: 5px;
+        float: right;
+      }
+    }
+  }
+  &-card{
+    &__img{
+      position: relative;
+      overflow: hidden;
+      &:hover{
+        img{
+          filter: blur(5px);
+        }
+        .img-hover{
+          opacity: 1;
+        }
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        max-height: 366px;
+        transition: all 0.4s;
+      }
+      .img-hover{
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        p{
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 400;
+          text-align: center;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
+    }
+    &__desc{
+      margin-top: 18px;
+      .line{
+        width: 120px;
+        height: 3px;
+        background-color: #005e9c;
+      }
+      .title{
+        margin-top: 9px;
+        a{
+          color: #030303;
+          font-size: 18px;
+          font-weight: 600;
+          text-decoration: none;
+        }
+      }
+      .date{
+        color: #646262;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-top: 13px;
+        display: flex;
+        align-items: center;
+        p{
+          padding-right: 25px;
+        }
+      }
+    }
+  }
+}
