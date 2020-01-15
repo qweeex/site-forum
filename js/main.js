@@ -3,6 +3,7 @@ $(document).ready(() => {
 
    // Top Slider
   let swiper = new Swiper('.top-block', {
+    loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
