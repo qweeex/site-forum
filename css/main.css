@@ -4664,9 +4664,14 @@ textarea {
   .header-links .search-link {
     display: none;
   }
+  .header-menu__active {
+    left: 0 !important;
+    right: auto !important;
+  }
   .header-menu {
     height: auto;
-    right: -100%;
+    right: auto;
+    left: -100%;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
