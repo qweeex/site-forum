@@ -1,0 +1,64 @@
+.market{
+  padding-top: 64px;
+  &-title{
+    p{
+      color: #030303;
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  &-form{
+    display: flex;
+    &__select{
+      width: 60%;
+      padding: 10px;
+      .select-market{
+        border-radius: 19px;
+        background-color: #908f8f;
+        color: #fff;
+        font-weight: 300;
+        border: 0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    &__input{
+      width: 40%;
+      padding: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &:after{
+        content: url("../img/magnifying-glass.png");
+        position: absolute;
+        right: 15px;
+        top: 20px;
+      }
+      .input-market{
+        border: 0;
+        border-bottom: 1px solid #908f8f;
+        width: 100%;
+        background: transparent;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .market{
+    &-form{
+      flex-direction: column;
+      &__select{
+        width: 100%;
+      }
+      &__input{
+        width: 100%;
+        &::after{
+          top: 10px;
+        }
+      }
+    }
+  }
+}
