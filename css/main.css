@@ -4891,7 +4891,7 @@ textarea {
   text-decoration: none;
 }
 .stock-all__link:after {
-  content: url("/img/icons/down-arrow_2.svg");
+  content: url("../img/icons/down-arrow_2.svg");
   width: 9px;
   margin-left: 5px;
   float: right;
@@ -5018,7 +5018,7 @@ textarea {
   text-decoration: none;
 }
 .shops-all__link:after {
-  content: url("/img/icons/down-arrow_2.svg");
+  content: url("../img/icons/down-arrow_2.svg");
   width: 9px;
   margin-left: 5px;
   float: right;
@@ -5304,7 +5304,7 @@ textarea {
   text-decoration: none;
 }
 .event-info__web a:before {
-  content: url("/img/icons/global.svg");
+  content: url("../img/icons/global.svg");
   float: left;
   display: block;
   width: 17px;
@@ -5323,7 +5323,7 @@ textarea {
   text-decoration: none;
 }
 .event-info__phone a:before {
-  content: url("/img/icons/call.svg");
+  content: url("../img/icons/call.svg");
   float: left;
   display: block;
   width: 17px;
@@ -5348,7 +5348,7 @@ textarea {
   background-color: #636161;
 }
 .event-info__btn .btn-map span:before {
-  content: url("/img/icons/navigation_2.svg");
+  content: url("../img/icons/navigation_2.svg");
   width: 15px;
   float: left;
   position: absolute;
