@@ -113,15 +113,16 @@
         display: none;
         &:checked + label{
           span.check{
-            background: url("/img/icons/circular-check-button.svg") !important;
+            background-image: url("/img/icons/circular-check-button.svg") !important;
           }
         }
       }
       span.check{
-        background: url("/img/icons/circular-check-button_2.svg");
+        background-image: url("/img/icons/circular-check-button_2.svg");
         width: 22px;
         height: 22px;
         background-size: cover;
+        background-repeat: no-repeat;
         display: block;
         content: '';
         float: left;
@@ -138,6 +139,26 @@
         a{
           color: inherit;
         }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .partneer{
+    &-image{
+      height: 250px;
+    }
+    &-content{
+      padding-top: 60px;
+    }
+    &-form{
+      margin-top: 50px;
+      padding-left: 0;
+      &:before{
+        display: none;
+      }
+      .form-check{
+        display: flex;
       }
     }
   }

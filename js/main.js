@@ -24,6 +24,16 @@ $(document).ready(() => {
       el: '.swiper-scrollbar',
       hide: false,
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    }
   });
 
   // Header Menu

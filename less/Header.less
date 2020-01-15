@@ -84,6 +84,9 @@
         }
       }
     }
+    &__links{
+      display: none;
+    }
   }
 }
 @media (max-width: 1470px) {
@@ -92,6 +95,67 @@
       height: 450px;
       &__nav{
         padding-top: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .header{
+    &-links{
+      .time-link,
+      .map-link,
+      .road-link,
+      .search-link{
+        display: none;
+      }
+    }
+    &-menu{
+      height: auto;
+      right: -100%;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      display: block;
+      &__nav{
+        padding-bottom: 25px;
+        .nav-link{
+          font-size: 18px;
+          padding-bottom: 15px;
+        }
+      }
+      &__links{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .menu-link{
+          svg{
+            width: 42px;
+            height: 22px;
+          }
+        }
+        .header-link{
+          text-decoration: none;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 600;
+          transition: all 0.4s;
+          opacity: 1;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 50%;
+          text-align: center;
+          margin-bottom: 15px;
+          svg{
+            height: 30px;
+          }
+          p{
+            padding-top: 10px;
+          }
+          &:hover{
+            opacity: 0.5;
+          }
+        }
       }
     }
   }

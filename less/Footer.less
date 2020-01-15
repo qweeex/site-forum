@@ -73,3 +73,30 @@
     align-items: center;
   }
 }
+
+@media (max-width: 600px) {
+  .footer{
+    &-content{
+      padding-top: 25px;
+      flex-wrap: wrap;
+    }
+    &-adress{
+      text-align: left;
+      width: 100%;
+    }
+    &-time{
+      width: 100%;
+      text-align: left;
+      padding-bottom: 25px;
+    }
+    &-social{
+      flex-direction: row;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      &__link{
+        margin-right: 10px;
+      }
+    }
+  }
+}

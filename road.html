@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="row">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Акции и события || Форум</title>
+    <title>Форум</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1c8b0a86-1a4c-4887-9f5a-8e7f18130bc8&lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.js"></script>
+    <script src="js/yandexmaps.js"></script>
 </head>
 <body>
     <div class="header">
@@ -223,271 +225,31 @@
         </div>
     </div>
 </div>
-    <div class="stock">
+    <div class="road">
         <div class="container">
             <div class="row">
-                <div class="col-xl-auto col-12">
-                    <div class="stock-title">
-                        <h1>Акции и события</h1>
-                    </div>
-                </div>
-                <div class="col-xl-auto col-12">
-                    <div class="stock-sort">
-                        <a href="#" class="sort-btn sort-all sort-active">
-                            <span>Все</span>
-                        </a>
-                        <a href="#" class="sort-btn sort-stock">
-                            <span>Акции</span>
-                        </a>
-                        <a href="#" class="sort-btn sort-event">
-                            <span>События</span>
-                        </a>
-                    </div>
+                <div class="col-xl-12">
+                    <div class="road-image" style="background-image: url('img/part-day.jpg')"></div>
                 </div>
             </div>
-            <div class="row mt-5 stock-gap">
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="road-selector">
+                        <div class="road-selector_btn">
+                            <button class="btn-type btn-type__active">На общественном транспорте</button>
+                            <button class="btn-type">На автомобиле</button>
+                            <button class="btn-type">Пешком</button>
                         </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card stock-card__disabled">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-event">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="event.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-event">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="event.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 card-stock">
-                    <div class="stock-card">
-                        <div class="stock-card__img">
-                            <img src="img/stock.jpg" alt="">
-                            <div class="img-hover">
-                                <p>Повседневная практика показывает, что реализация намеченных пла</p>
-                            </div>
-                        </div>
-                        <div class="stock-card__desc">
-                            <div class="line"></div>
-                            <div class="title">
-                                <a href="stock-signle.html">Ликвидация осенней коллекции</a>
-                            </div>
-                            <div class="date">
-                                <p>H&M</p>
-                                <p>1.10 - 30.11</p>
-                            </div>
+                        <div class="road-selector_input">
+                            <label>
+                                <input type="text"  placeholder="Откуда Вы Поедете?">
+                            </label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="road"></div>
     </div>
     <div class="footer">
         <div class="container">
