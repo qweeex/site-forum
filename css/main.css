@@ -5448,6 +5448,18 @@ textarea {
   border-bottom: 1px solid red;
   color: red;
 }
+.partneer-form input[type="text"].error::-webkit-input-placeholder {
+  color: red;
+}
+.partneer-form input[type="text"].error:-ms-input-placeholder {
+  color: red;
+}
+.partneer-form input[type="text"].error::-ms-input-placeholder {
+  color: red;
+}
+.partneer-form input[type="text"].error::placeholder {
+  color: red;
+}
 .partneer-form select {
   background: transparent;
   width: 100%;
