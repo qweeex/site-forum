@@ -5449,16 +5449,16 @@ textarea {
   color: red;
 }
 .partneer-form input[type="text"].error::-webkit-input-placeholder {
-  color: red;
+  color: red !important;
 }
 .partneer-form input[type="text"].error:-ms-input-placeholder {
-  color: red;
+  color: red !important;
 }
 .partneer-form input[type="text"].error::-ms-input-placeholder {
-  color: red;
+  color: red !important;
 }
 .partneer-form input[type="text"].error::placeholder {
-  color: red;
+  color: red !important;
 }
 .partneer-form select {
   background: transparent;
