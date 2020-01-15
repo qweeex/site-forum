@@ -4,6 +4,9 @@ body {
   font-weight: 400;
   background-color: #f7f7f7;
 }
+html {
+  overflow-x: hidden;
+}
 /*!
  * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
