@@ -5523,10 +5523,10 @@ textarea {
   display: none;
 }
 .partneer-form .form-check input[type="checkbox"]:checked + label span.check {
-  background-image: url("/img/icons/circular-check-button.svg") !important;
+  background-image: url("../img/icons/circular-check-button.svg") !important;
 }
 .partneer-form .form-check span.check {
-  background-image: url("/img/icons/circular-check-button_2.svg");
+  background-image: url("../img/icons/circular-check-button_2.svg");
   width: 22px;
   height: 22px;
   background-size: cover;
@@ -5543,6 +5543,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .partneer-form .form-check p {
   color: #7a7a7a;
