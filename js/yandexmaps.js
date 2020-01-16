@@ -45,7 +45,7 @@ $(document).ready(() => {
     function init(){
         // Создание карты.
         var myMap = new ymaps.Map("road", {
-            center: [mapB],
+            center: [51.546939, 46.014664],
             zoom: 5,
             controls: ['zoomControl']
         });
