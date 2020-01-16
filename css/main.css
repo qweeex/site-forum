@@ -5839,7 +5839,7 @@ textarea {
   padding: 10px;
 }
 .road-selector_btn .button-park:before {
-  background: url("/img/parking.png") center center no-repeat;
+  background: url("../img/parking.png") center center no-repeat;
   width: 17px;
   height: 17px;
   background-size: cover;
