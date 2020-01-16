@@ -5975,7 +5975,7 @@ textarea {
 .road-popup__content .content-desc .grey {
   color: #636161;
 }
-@media (max-width: 1470px) {
+@media (max-width: 1600px) {
   .road-popup__content {
     padding: 25px;
     width: 700px;
