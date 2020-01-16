@@ -29,6 +29,28 @@
         padding-bottom: 10px;
         width: 30%;
       }
+      .btn-type__active.btn-car + .button-park{
+        display: block;
+      }
+      .button-park{
+        border-radius: 19px;
+        background-color: #c4c4c4;
+        border: 0;
+        color: #ffffff;
+        display: none;
+        padding: 10px;
+        &:before{
+          background: url("/img/parking.png") center center no-repeat;
+          width: 17px;
+          height: 17px;
+          background-size: cover;
+          content: '';
+          display: block;
+        }
+        &:hover{
+          background-color: #908f8f;
+        }
+      }
       .btn-type__active{
         background-color: #908f8f;
       }
@@ -61,5 +83,117 @@
   #road{
     width: 100%;
     height: 600px;
+  }
+}
+.road-popup__active{
+  visibility: visible !important;
+  .road-back{
+    opacity: 1 !important;
+  }
+  .road-popup__content{
+    top: 0 !important;
+  }
+}
+.road-popup{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  .road-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.5);
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  overflow: hidden;
+  &__close{
+    background-color: #7a7a7a;
+    display: flex;
+    padding: 10px;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: center;
+    content: url("../img/cancel.png");
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    &:hover{
+      background-color: #636161;
+    }
+  }
+  &__content{
+    position: relative;
+    z-index: 200;
+    background: #ffffff;
+    width: 800px;
+    padding: 66px;
+    top: -100%;
+    transition: all 0.4s;
+    .content-title{
+      padding-bottom: 40px;
+      p{
+        color: #030303;
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+    .content-img{
+      margin-top: 10px;
+      img{
+        max-width: 100%;
+      }
+    }
+    .content-desc{
+      p{
+        color: #030303;
+        padding-bottom: 15px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .grey{
+        color: #636161;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .road{
+    &-image{
+      height: 250px;
+    }
+    &-selector{
+      width: 100%;
+      &_btn{
+        width: 100%;
+        flex-wrap: wrap;
+        .btn-type{
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .button-park{
+          margin-bottom: 15px;
+        }
+        .btn-car{
+          width: 70% !important;
+        }
+      }
+      &_input{
+        width: 100%;
+        padding-left: 0;
+      }
+    }
   }
 }

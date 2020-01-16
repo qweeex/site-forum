@@ -71,4 +71,14 @@ $(document).ready(() => {
     $('.card-event').show(500);
   });
 
+  // Parking popup
+  $('.button-park').on('click', (e) => {
+    $('.road-popup').addClass('road-popup__active');
+  });
+
+  $('.road-popup__close').on('click', (e) => {
+    e.preventDefault();
+    $('.road-popup').removeClass('road-popup__active');
+  });
+
 });

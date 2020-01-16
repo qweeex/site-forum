@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=1c8b0a86-1a4c-4887-9f5a-8e7f18130bc8&lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.js"></script>
@@ -236,20 +238,46 @@
                 <div class="col-xl-12">
                     <div class="road-selector">
                         <div class="road-selector_btn">
-                            <button class="btn-type btn-type__active">На общественном транспорте</button>
-                            <button class="btn-type">На автомобиле</button>
-                            <button class="btn-type">Пешком</button>
+                            <button class="btn-type" data-type="masstransit">На общественном транспорте</button>
+                            <button class="btn-type btn-car btn-type__active" data-type="driving">На автомобиле</button>
+                            <button class="button-park"></button>
+                            <button class="btn-type" data-type="pedestrian">Пешком</button>
                         </div>
-                        <div class="road-selector_input">
+                        <form class="road-selector_input">
                             <label>
                                 <input type="text"  placeholder="Откуда Вы Поедете?">
                             </label>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
         <div id="road"></div>
+    </div>
+    <div class="road-popup">
+        <div class="road-back"></div>
+        <div class="road-popup__content">
+            <a href="#" class="road-popup__close"></a>
+            <div class="content-title">
+                <p>Правила пользования парковкой ТК «ФОРУМ»</p>
+            </div>
+            <div class="content-desc">
+                <p>1. Въезд со стороны ул. Железнодорожная</p>
+
+                <p>2. Оплата парковки:</p>
+                <p>
+                    - Первый час парковки бесплатно, каждый последующий оплачивается в размере 50 руб./час.
+                    <br>
+                    - Оплата производится посетителями ТК «ФОРУМ» посредством внесения денежных средств на выезде с парковки с предоставлением парковочного талона.
+                </p>
+                <hr>
+                <p class="grey">* Банковские карты к оплате не принимаются</p>
+                <p>3. Выезд осуществляется на ул. Танкистов</p>
+            </div>
+            <div class="content-img">
+                <img src="img/parking-map.jpg" alt="">
+            </div>
+        </div>
     </div>
     <div class="footer">
         <div class="container">
