@@ -5975,6 +5975,15 @@ textarea {
 .road-popup__content .content-desc .grey {
   color: #636161;
 }
+@media (max-width: 1470px) {
+  .road-popup__content {
+    padding: 25px;
+    width: 700px;
+  }
+  .road-popup__content .content-img img {
+    height: 290px;
+  }
+}
 @media (max-width: 600px) {
   .road-image {
     height: 250px;
