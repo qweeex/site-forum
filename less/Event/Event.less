@@ -1,6 +1,6 @@
 .event{
   &-image{
-    height: 561px;
+    height: 484px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
       color: #030303;
       font-size: 30px;
       font-weight: 600;
-      padding-bottom: 34px;
+      padding-bottom: 21px;
     }
     p{
       color: #030303;
@@ -26,7 +26,7 @@
       color: #636161;
       font-size: 16px;
       font-weight: 400;
-      padding-top: 10px;
+      padding-top: 0;
     }
     ul{
       color: #030303;
@@ -38,8 +38,8 @@
   &-info{
     display: flex;
     flex-direction: column;
-    padding-left: 15%;
-    padding-top: 25px;
+    padding-left: 9%;
+    padding-top: 4px;
     &__img{
       padding-bottom: 50px;
     }
@@ -98,8 +98,11 @@
         font-size: 16px;
         font-weight: 400;
         position: relative;
-        padding: 12px 45px;
+        padding: 10px 52px;
+        -webkit-transition: all 0.4s;
         transition: all 0.4s;
+        border: 0;
+        margin-top: 4px;
         &:hover{
           background-color: #636161;
         }
@@ -109,9 +112,23 @@
             width: 15px;
             float: left;
             position: absolute;
-            left: 15px;
-            top: 16px
+            left: 14px;
+            top: 13px;
           }
+        }
+      }
+    }
+  }
+  + .stock{
+    margin-top: 43px;
+  }
+}
+@media (max-width: 1550px) {
+  .event{
+    &-info{
+      &__btn{
+        .btn-map{
+          padding: 10px 40px;
         }
       }
     }
@@ -121,6 +138,17 @@
   .event{
     &-image{
       height: 430px;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .event{
+    &-info{
+      &__btn{
+        .btn-map{
+          padding: 10px 36px;
+        }
+      }
     }
   }
 }

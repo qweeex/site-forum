@@ -24,12 +24,13 @@
   &-info{
     display: flex;
     flex-direction: column;
-    padding-top: 25px;
+    padding-top: 29%;
+    padding-left: 8%;
     &__img{
       padding-bottom: 40px;
     }
     &__level{
-      padding-bottom: 20px;
+      padding-bottom: 16px;
       p{
         color: #414141;
         font-size: 31px;
@@ -44,7 +45,7 @@
         font-weight: 400;
         text-decoration: none;
         &:before{
-          content: url("/img/icons/global.svg");
+          content: url("../img/icons/global.svg");
           float: left;
           display: block;
           width: 17px;
@@ -56,14 +57,14 @@
       }
     }
     &__phone{
-      padding-bottom: 25px;
+      padding-bottom: 22px;
       a{
         color: #414141;
         font-size: 21px;
         font-weight: 400;
         text-decoration: none;
         &:before{
-          content: url("/img/icons/call.svg");
+          content: url("../img/icons/call.svg");
           float: left;
           display: block;
           width: 17px;
@@ -77,7 +78,7 @@
     &__social{
       display: flex;
       flex-direction: row;
-      padding-bottom: 35px;
+      padding-bottom: 28px;
       a{
         margin-right: 10px;
       }
@@ -92,7 +93,7 @@
          font-size: 16px;
          font-weight: 400;
          position: relative;
-         padding: 12px 45px;
+         padding: 10px 53px;
          transition: all 0.4s;
          border: 0;
          &:hover{
@@ -100,16 +101,51 @@
          }
          span{
            &:before{
-             content: url("/img/icons/navigation_2.svg");
+             content: url("../img/icons/navigation_2.svg");
              width: 15px;
              float: left;
              position: absolute;
              left: 15px;
-             top: 16px
+             top: 12px
            }
          }
        }
       }
+    }
+  }
+}
+@media (max-width: 1600px) {
+  .shop{
+    &-info{
+      &__btn{
+        .btn-map{
+          button{
+            padding: 10px 45px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .shop{
+    &-info{
+      &__btn{
+        .btn-map{
+          button{
+            padding: 10px 37px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .shop{
+    &-info{
+      padding-top: 15%;
+      padding-left: 0;
     }
   }
 }

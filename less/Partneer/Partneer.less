@@ -1,14 +1,14 @@
 .partneer{
   padding-bottom: 100px;
   &-image{
-    height: 561px;
+    height: 485px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
   }
   &-content{
-    padding-top: 115px;
+    padding-top: 110px;
     .title{
       color: #030303;
       font-size: 30px;
@@ -40,18 +40,18 @@
     }
   }
   &-form{
-    margin-top: 115px;
-    padding-left: 70px;
+    margin-top: 110px;
+    padding-left: 22%;
     position: relative;
     &::before{
       width: 1px;
-      height: 110%;
+      height: 105%;
       background: #636161;
       display: block;
       content: '';
       position: absolute;
-      left: 0;
-      top: -10%;
+      left: 9.5%;
+      top: -1%
     }
     .title{
       color: #030303;
@@ -64,8 +64,10 @@
       width: 100%;
       border: 0;
       border-bottom: 1px solid #636161;
-      padding: 10px;
-      margin-bottom: 25px;
+      padding: 8px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      margin-top: 12px;
     }
     input[type="text"].error{
       border-bottom: 1px solid red;
@@ -79,9 +81,11 @@
       width: 100%;
       border: 0;
       border-bottom: 1px solid #636161;
-      padding: 10px 5px;
       color: #636161;
-      margin-bottom: 25px;
+      padding: 8px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      margin-top: 12px;
     }
     textarea{
       background: transparent;
@@ -90,7 +94,8 @@
       padding: 15px;
       font-size: 16px;
       color: #636161;
-      height: 150px;
+      height: 167px;
+      margin-top: 41px;
     }
     .form-btn{
       background-color: #908f8f;
@@ -100,7 +105,7 @@
       font-weight: 400;
       border: 0;
       position: relative;
-      padding: 12px 45px;
+      padding: 9px 46px;
       transition: all 0.4s;
       margin-left: auto;
       display: block;
@@ -143,6 +148,14 @@
           color: inherit;
         }
       }
+    }
+  }
+}
+@media (max-width: 1599px) {
+  .partneer{
+    .col-policy{
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 }
