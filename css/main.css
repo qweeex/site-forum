@@ -6432,7 +6432,7 @@ textarea {
           align-items: center;
 }
 .map-wrapper .map-popup__card .card-floor p:before {
-  background: url("/image/maps-and-location.svg");
+  background: url("../image/maps-and-location.svg");
   background-size: cover;
   display: block;
   content: '';
@@ -6457,7 +6457,7 @@ textarea {
   text-decoration: none;
 }
 .map-wrapper .map-popup__card .card-phone a:before {
-  background: url("/image/phone.svg");
+  background: url("../image/phone.svg");
   background-size: cover;
   display: block;
   content: '';
