@@ -233,6 +233,11 @@
   height: 20px;
   margin-right: 10px;
 }
+@media (max-width: 1610px) {
+  .map {
+    height: 105vh;
+  }
+}
 @media (max-width: 1450px) {
   .map {
     height: 725px;
