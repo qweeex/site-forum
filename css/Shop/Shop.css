@@ -1,0 +1,118 @@
+.shop-content__img img {
+  max-width: 100%;
+}
+.shop-content__text .title {
+  color: #030303;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 34px;
+  padding-top: 57px;
+}
+.shop-content__text p {
+  color: #030303;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.shop-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 29%;
+  padding-left: 8%;
+}
+.shop-info__img {
+  padding-bottom: 40px;
+}
+.shop-info__level {
+  padding-bottom: 16px;
+}
+.shop-info__level p {
+  color: #414141;
+  font-size: 31px;
+  font-weight: 400;
+}
+.shop-info__web {
+  padding-bottom: 25px;
+}
+.shop-info__web a {
+  color: #414141;
+  font-size: 21px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.shop-info__web a:before {
+  content: url("../img/icons/global.svg");
+  float: left;
+  display: block;
+  width: 17px;
+  margin-right: 12px;
+}
+.shop-info__web a:hover {
+  text-decoration: underline;
+}
+.shop-info__phone {
+  padding-bottom: 22px;
+}
+.shop-info__phone a {
+  color: #414141;
+  font-size: 21px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.shop-info__phone a:before {
+  content: url("../img/icons/call.svg");
+  float: left;
+  display: block;
+  width: 17px;
+  margin-right: 8px;
+}
+.shop-info__phone a:hover {
+  text-decoration: underline;
+}
+.shop-info__social {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 28px;
+}
+.shop-info__social a {
+  margin-right: 10px;
+}
+.shop-info__btn .btn-map button {
+  text-decoration: none;
+  background-color: #908f8f;
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  padding: 10px 53px;
+  transition: all 0.4s;
+  border: 0;
+}
+.shop-info__btn .btn-map button:hover {
+  background-color: #636161;
+}
+.shop-info__btn .btn-map button span:before {
+  content: url("../img/icons/navigation_2.svg");
+  width: 15px;
+  float: left;
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+@media (max-width: 1600px) {
+  .shop-info__btn .btn-map button {
+    padding: 10px 45px;
+  }
+}
+@media (max-width: 1300px) {
+  .shop-info__btn .btn-map button {
+    padding: 10px 37px;
+  }
+}
+@media (max-width: 600px) {
+  .shop-info {
+    padding-top: 15%;
+    padding-left: 0;
+  }
+}

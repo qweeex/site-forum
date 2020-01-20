@@ -1,0 +1,146 @@
+.event-image {
+  height: 484px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.event-content {
+  padding-bottom: 30px;
+}
+.event-content .title {
+  color: #030303;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 21px;
+}
+.event-content p {
+  color: #030303;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 15px;
+  line-height: 1.2;
+  padding-bottom: 15px;
+}
+.event-content .desc {
+  color: #636161;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 0;
+}
+.event-content ul {
+  color: #030303;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.event-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 9%;
+  padding-top: 4px;
+}
+.event-info__img {
+  padding-bottom: 50px;
+}
+.event-info__level {
+  padding-bottom: 25px;
+}
+.event-info__level p {
+  color: #414141;
+  font-size: 31px;
+  font-weight: 400;
+}
+.event-info__web {
+  padding-bottom: 26px;
+}
+.event-info__web a {
+  color: #414141;
+  font-size: 21px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.event-info__web a:before {
+  content: url("../img/icons/global.svg");
+  float: left;
+  display: block;
+  width: 17px;
+  margin-right: 12px;
+}
+.event-info__web a:hover {
+  text-decoration: underline;
+}
+.event-info__phone {
+  padding-bottom: 40px;
+}
+.event-info__phone a {
+  color: #414141;
+  font-size: 21px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.event-info__phone a:before {
+  content: url("../img/icons/call.svg");
+  float: left;
+  display: block;
+  width: 17px;
+  margin-right: 8px;
+}
+.event-info__phone a:hover {
+  text-decoration: underline;
+}
+.event-info__btn .btn-map {
+  text-decoration: none;
+  background-color: #908f8f;
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  padding: 10px 52px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 0;
+  margin-top: 4px;
+}
+.event-info__btn .btn-map:hover {
+  background-color: #636161;
+}
+.event-info__btn .btn-map span:before {
+  content: url("../img/icons/navigation_2.svg");
+  width: 15px;
+  float: left;
+  position: absolute;
+  left: 14px;
+  top: 13px;
+}
+.event + .stock {
+  margin-top: 43px;
+}
+@media (max-width: 1550px) {
+  .event-info__btn .btn-map {
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 1450px) {
+  .event-image {
+    height: 430px;
+  }
+}
+@media (max-width: 1280px) {
+  .event-info__btn .btn-map {
+    padding: 10px 36px;
+  }
+}
+@media (max-width: 600px) {
+  .event-image {
+    height: 250px;
+  }
+  .event-info {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .event + .stock .stock-all {
+    padding-top: 15px;
+  }
+}

@@ -1,0 +1,87 @@
+.shops {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.shops .swiper-scrollbar {
+  left: 0 !important;
+  width: 100% !important;
+}
+.shops-slider {
+  margin-top: 40px;
+}
+.shops-title p {
+  color: #030303;
+  font-size: 30px;
+  font-weight: 600;
+}
+.shops-all__link {
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+}
+.shops-all__link:after {
+  content: url("../img/icons/down-arrow_2.svg");
+  width: 9px;
+  margin-left: 5px;
+  float: right;
+}
+.shops-item {
+  padding-bottom: 10px;
+}
+.shops-item__type {
+  color: #414141;
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.shops-item__content {
+  max-width: 366px;
+  height: 366px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shops-item__content .content-level {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.shops-item__content .content-level p {
+  color: #414141;
+  font-size: 16px;
+  font-weight: 300;
+}
+.shops-item__content .content-links {
+  position: absolute;
+  right: 19px;
+  bottom: -100%;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+}
+.shops-item__content .content-links .link-map {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+}
+.shops-item__content .content-links .link-phone {
+  width: 34px;
+  height: 34px;
+}
+.shops-item__content:hover .content-links {
+  bottom: 12px;
+}
+@media (max-width: 1470px) {
+  .shops-item__content {
+    height: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .shops-title p {
+    font-size: 25px;
+  }
+}

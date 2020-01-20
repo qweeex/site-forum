@@ -1,0 +1,203 @@
+.road {
+  padding-bottom: 70px;
+}
+.road-image {
+  height: 483px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.road-selector {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 43px;
+  margin-bottom: 40px;
+}
+.road-selector_btn {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.road-selector_btn .btn-type {
+  border-radius: 19px;
+  background-color: #c4c4c4;
+  border: 0;
+  color: #ffffff;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 30%;
+}
+.road-selector_btn .btn-type__active.btn-car + .button-park {
+  display: block;
+}
+.road-selector_btn .button-park {
+  border-radius: 19px;
+  background-color: #c4c4c4;
+  border: 0;
+  color: #ffffff;
+  display: none;
+  padding: 10px;
+}
+.road-selector_btn .button-park:before {
+  background: url("../img/parking.png") center center no-repeat;
+  width: 17px;
+  height: 17px;
+  background-size: cover;
+  content: '';
+  display: block;
+}
+.road-selector_btn .button-park:hover {
+  background-color: #908f8f;
+}
+.road-selector_btn .btn-type__active {
+  background-color: #908f8f;
+}
+.road-selector_input {
+  width: 40%;
+  padding-left: 40px;
+}
+.road-selector_input label {
+  position: relative;
+}
+.road-selector_input label:after {
+  content: url("../img/magnifying-glass.png");
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+.road-selector_input input {
+  font-size: 18px;
+  font-weight: 300;
+  background: transparent;
+  color: #908f8f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #908f8f;
+}
+.road #road {
+  width: 100%;
+  height: 600px;
+}
+.road-popup__active {
+  visibility: visible !important;
+}
+.road-popup__active .road-back {
+  opacity: 1 !important;
+}
+.road-popup__active .road-popup__content {
+  top: 0 !important;
+}
+.road-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.road-popup .road-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.road-popup__close {
+  background-color: #7a7a7a;
+  display: flex;
+  padding: 10px;
+  border-radius: 35px;
+  align-items: center;
+  justify-content: center;
+  content: url("../img/cancel.png");
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+.road-popup__close:hover {
+  background-color: #636161;
+}
+.road-popup__content {
+  position: relative;
+  z-index: 200;
+  background: #ffffff;
+  width: 800px;
+  padding: 66px;
+  top: -100%;
+  transition: all 0.4s;
+}
+.road-popup__content .content-title {
+  padding-bottom: 40px;
+}
+.road-popup__content .content-title p {
+  color: #030303;
+  font-size: 25px;
+  font-weight: 600;
+}
+.road-popup__content .content-img {
+  margin-top: 10px;
+}
+.road-popup__content .content-img img {
+  max-width: 100%;
+}
+.road-popup__content .content-desc p {
+  color: #030303;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.road-popup__content .content-desc .grey {
+  color: #636161;
+}
+@media (max-width: 1600px) {
+  .road-popup__content {
+    padding: 25px;
+    width: 700px;
+  }
+  .road-popup__content .content-img img {
+    height: 290px;
+  }
+}
+@media (max-width: 600px) {
+  .road-image {
+    height: 250px;
+  }
+  .road-selector {
+    width: 100%;
+  }
+  .road-selector_btn {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .road-selector_btn .btn-type {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .road-selector_btn .button-park {
+    margin-bottom: 15px;
+  }
+  .road-selector_btn .btn-car {
+    width: 70% !important;
+  }
+  .road-selector_input {
+    width: 100%;
+    padding-left: 0;
+  }
+}

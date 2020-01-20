@@ -6401,6 +6401,9 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.map-wrapper .map-popup__card .card-image img {
+  height: 100%;
+}
 .map-wrapper .map-popup__card .card-title p {
   padding-left: 15px;
   padding-right: 15px;
