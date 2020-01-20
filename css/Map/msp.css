@@ -169,7 +169,7 @@
 }
 .map-wrapper .map-popup__card .card-image {
   width: 100%;
-  height: 150px;
+  max-height: 145px;
   display: flex;
   align-items: center;
   justify-content: center;
