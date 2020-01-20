@@ -4537,7 +4537,7 @@ textarea {
   padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
-  z-index: 50;
+  z-index: 501;
 }
 .header-links {
   display: -webkit-box;
@@ -6390,7 +6390,7 @@ textarea {
 }
 .map-wrapper .map-popup__card .card-image {
   width: 100%;
-  max-height: 145px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6402,7 +6402,7 @@ textarea {
           justify-content: center;
 }
 .map-wrapper .map-popup__card .card-image img {
-  height: 100%;
+  max-height: 145px;
 }
 .map-wrapper .map-popup__card .card-title p {
   padding-left: 15px;
