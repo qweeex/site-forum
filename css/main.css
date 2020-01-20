@@ -6198,7 +6198,7 @@ textarea {
   background-color: #7a7a7a;
 }
 .map {
-  height: 105vh;
+  height: 90vh;
   overflow: hidden;
   background: #f7f7f7;
   margin-top: 70px;
@@ -6471,6 +6471,9 @@ textarea {
 @media (max-width: 1610px) {
   .map {
     height: 105vh;
+  }
+  .map-wrapper .map-list__wrapper {
+    height: 87%;
   }
 }
 @media (max-width: 1450px) {
