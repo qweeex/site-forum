@@ -21,8 +21,17 @@
   text-decoration: none;
   padding-right: 40px;
 }
+.stock-sort .sort-btn span:after {
+  transition: all 0.4s;
+}
+.stock-sort .sort-btn:hover span:after {
+  opacity: 0.5;
+}
 .stock-sort .sort-active span::after {
   opacity: 1 !important;
+}
+.stock-sort .sort-active:hover span:after {
+  opacity: 1;
 }
 .stock-sort .sort-stock span:after {
   width: 100%;
@@ -144,6 +153,10 @@
   .stock-title h3,
   .stock-title h4 {
     font-size: 25px;
+  }
+  .stock-all {
+    text-align: right;
+    padding-top: 0 !important;
   }
   .stock-card {
     margin-bottom: 25px;

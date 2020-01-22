@@ -12,6 +12,14 @@
 .market-form__select {
   width: 60%;
   padding: 7px;
+  position: relative;
+}
+.market-form__select:after {
+  content: url("../img/pointing-up-arrow.png");
+  position: absolute;
+  right: 5px;
+  top: 36%;
+  transform: rotate(180deg) scale(0.5);
 }
 .market-form__select .select-market {
   border-radius: 19px;
@@ -58,11 +66,25 @@
   }
   .market-form__select {
     width: 100%;
+    padding: 0;
+    margin-top: 15px;
+  }
+  .market-form__select:after {
+    top: 12px;
+  }
+  .market-form__select .select-market {
+    margin-left: 0;
   }
   .market-form__input {
     width: 100%;
+    padding-left: 0;
+    margin-top: 15px;
   }
   .market-form__input::after {
     top: 10px;
+  }
+  .market .shops-item__content {
+    width: 100%;
+    max-width: 100%;
   }
 }

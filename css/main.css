@@ -7,6 +7,23 @@ body {
 html {
   overflow-x: hidden;
 }
+a {
+  outline: none !important;
+}
+a:hover {
+  outline: none !important;
+}
+a:focus {
+  outline: none !important;
+}
+select,
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
 /*!
  * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -4126,6 +4143,35 @@ html {
 .bread-link.active:after {
   display: none;
 }
+.arrow-up {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 5000;
+}
+.arrow-up__btn {
+  background: #7a838e;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.arrow-up__btn:hover {
+  background: #646262;
+}
+.arrow-up__btn img {
+  width: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -4846,8 +4892,18 @@ textarea {
   text-decoration: none;
   padding-right: 40px;
 }
+.stock-sort .sort-btn span:after {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.stock-sort .sort-btn:hover span:after {
+  opacity: 0.5;
+}
 .stock-sort .sort-active span::after {
   opacity: 1 !important;
+}
+.stock-sort .sort-active:hover span:after {
+  opacity: 1;
 }
 .stock-sort .sort-stock span:after {
   width: 100%;
@@ -4985,6 +5041,10 @@ textarea {
   .stock-title h4 {
     font-size: 25px;
   }
+  .stock-all {
+    text-align: right;
+    padding-top: 0 !important;
+  }
   .stock-card {
     margin-bottom: 25px;
   }
@@ -5090,6 +5150,9 @@ textarea {
   }
 }
 @media (max-width: 600px) {
+  .shops-all {
+    text-align: right;
+  }
   .shops-title p {
     font-size: 25px;
   }
@@ -5260,7 +5323,7 @@ textarea {
   line-height: 1.2;
   padding-bottom: 15px;
 }
-.event-content .desc {
+.event-content .desc p {
   color: #636161;
   font-size: 16px;
   font-weight: 400;
@@ -5942,7 +6005,7 @@ textarea {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 150;
+  z-index: 1500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6051,11 +6114,32 @@ textarea {
     margin-bottom: 15px;
   }
   .road-selector_btn .btn-car {
-    width: 70% !important;
+    width: 86% !important;
   }
   .road-selector_input {
     width: 100%;
     padding-left: 0;
+  }
+  .road-popup__close {
+    right: -5px;
+  }
+  .road-popup__content {
+    padding: 15px;
+    width: 100%;
+    margin: 10px;
+  }
+  .road-popup__content .content-title {
+    padding-bottom: 10px;
+  }
+  .road-popup__content .content-title p {
+    font-size: 15px;
+  }
+  .road-popup__content .content-desc p {
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+  .road-popup__content .content-img img {
+    height: 200px;
   }
 }
 .market {
@@ -6074,6 +6158,15 @@ textarea {
 .market-form__select {
   width: 60%;
   padding: 7px;
+  position: relative;
+}
+.market-form__select:after {
+  content: url("../img/pointing-up-arrow.png");
+  position: absolute;
+  right: 5px;
+  top: 36%;
+  -webkit-transform: rotate(180deg) scale(0.5);
+          transform: rotate(180deg) scale(0.5);
 }
 .market-form__select .select-market {
   border-radius: 19px;
@@ -6136,12 +6229,26 @@ textarea {
   }
   .market-form__select {
     width: 100%;
+    padding: 0;
+    margin-top: 15px;
+  }
+  .market-form__select:after {
+    top: 12px;
+  }
+  .market-form__select .select-market {
+    margin-left: 0;
   }
   .market-form__input {
     width: 100%;
+    padding-left: 0;
+    margin-top: 15px;
   }
   .market-form__input::after {
     top: 10px;
+  }
+  .market .shops-item__content {
+    width: 100%;
+    max-width: 100%;
   }
 }
 .error-page {

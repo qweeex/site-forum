@@ -22,7 +22,7 @@
   line-height: 1.2;
   padding-bottom: 15px;
 }
-.event-content .desc {
+.event-content .desc p {
   color: #636161;
   font-size: 16px;
   font-weight: 400;

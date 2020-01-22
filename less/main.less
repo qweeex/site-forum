@@ -7,6 +7,23 @@ body{
 html{
   overflow-x: hidden;
 }
+a {
+  outline: none !important;
+  &:hover{
+    outline: none !important;
+  }
+  &:focus{
+    outline: none !important;
+  }
+}
+select,
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
 /*!
  * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -75,6 +92,30 @@ html{
     text-decoration: none;
     &:after{
       display: none;
+    }
+  }
+}
+
+// Arrow top
+.arrow-up{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 5000;
+  &__btn{
+    background: #7a838e;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: all 0.4s;
+    &:hover{
+      background: #646262;
+    }
+    img{
+      width: 20px;
     }
   }
 }

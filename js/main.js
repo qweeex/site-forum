@@ -81,4 +81,19 @@ $(document).ready(() => {
     $('.road-popup').removeClass('road-popup__active');
   });
 
+  // Scroll top
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $('.arrow-up').removeClass('d-none');
+    } else {
+      $('.arrow-up').addClass('d-none');
+    }
+  });
+  $('.arrow-up').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 400);
+    return false;
+  });
+
 });

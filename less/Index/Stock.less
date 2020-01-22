@@ -16,11 +16,30 @@
       font-weight: 300;
       text-decoration: none;
       padding-right: 40px;
+      span{
+        &:after{
+          transition: all 0.4s;
+        }
+      }
+      &:hover{
+        span{
+          &:after{
+            opacity: 0.5;
+          }
+        }
+      }
     }
     .sort-active{
       span{
         &::after{
           opacity: 1 !important;
+        }
+      }
+      &:hover{
+        span{
+          &:after{
+            opacity: 1;
+          }
         }
       }
     }
@@ -166,6 +185,10 @@
       p,h1.h2,h3,h4{
         font-size: 25px;
       }
+    }
+    &-all{
+      text-align: right;
+      padding-top: 0 !important;
     }
     &-card{
       margin-bottom: 25px;

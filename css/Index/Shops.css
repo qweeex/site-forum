@@ -81,6 +81,9 @@
   }
 }
 @media (max-width: 600px) {
+  .shops-all {
+    text-align: right;
+  }
   .shops-title p {
     font-size: 25px;
   }

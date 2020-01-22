@@ -100,7 +100,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 150;
+  z-index: 1500;
   display: flex;
   visibility: hidden;
   align-items: center;
@@ -201,12 +201,39 @@
           margin-bottom: 15px;
         }
         .btn-car{
-          width: 70% !important;
+          width: 86% !important;
         }
       }
       &_input{
         width: 100%;
         padding-left: 0;
+      }
+    }
+  }
+  .road-popup{
+    &__close{
+      right: -5px;
+    }
+    &__content{
+      padding: 15px;
+      width: 100%;
+      margin: 10px;
+      .content-title{
+        padding-bottom: 10px;
+        p{
+          font-size: 15px;
+        }
+      }
+      .content-desc{
+        p{
+          padding-bottom: 10px;
+          font-size: 13px;
+        }
+      }
+      .content-img{
+        img{
+          height: 200px;
+        }
       }
     }
   }
