@@ -12,8 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/msp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/layout.js"></script>
 </head>
 <body>
     <div class="header">
@@ -291,7 +290,7 @@
                     </div>
                 </div>
                 <div class="map-list__wrapper">
-                    <div class="list-cat" v-for="item in shop">
+                    <!--<div class="list-cat" v-for="item in shop">
                         <p class="title">
                             {{ item.title }}
                         </p>
@@ -307,7 +306,7 @@
                                 @click="GetLevel(shop.level, shop.img, shop.phone, shop.title, item.title, shop.textLevel, shop.id)">
                             {{ shop.title }}
                         </p>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class="map-popup">
@@ -448,5 +447,13 @@
             </div>
         </div>
     </div>
+
+    <script id="template-product-item" type="text/template">
+        <div class="list-cat" >
+            <p class="title">
+                <%= title %>
+            </p>
+        </div>
+    </script>
 </body>
 </html>
